@@ -1,37 +1,14 @@
 
-🎭 Análisis del Teatro Musical en España (2010–2026)
+Análisis del Teatro Musical en España (2010–2026)
+Objetivo
 
-📌 Objetivo
+Proyecto de análisis de datos sobre la evolución del teatro musical en España (2010–2026) orientado a identificar patrones de producción, concentración empresarial, dinámicas territoriales, explotación en gira y características artísticas del sector.
 
-Este proyecto analiza la evolución del teatro musical en España entre 2010 y 2026 con el objetivo de identificar:
+Combina análisis cuantitativo, conocimiento sectorial y dashboards en Power BI con foco en toma de decisiones culturales y de negocio.
 
-patrones de producción
+Dashboards en Power BI
 
-concentración empresarial
-
-dinámicas territoriales
-
-modelos de explotación (giras)
-
-características artísticas
-
-posicionamiento estructural del sector
-
-El enfoque combina análisis de datos, conocimiento experto del sector escénico y visualización orientada a la toma de decisiones culturales y de negocio.
-
-Proyecto desarrollado como portfolio profesional en Data Analytics, con foco en:
-
-ETL reproducible
-
-análisis exploratorio riguroso
-
-dashboards en Power BI
-
-storytelling sectorial
-
-📊 Dashboards en Power BI
-
-Los análisis finales se presentan mediante dashboards interactivos, entre ellos:
+El proyecto incluye dashboards interactivos:
 
 Evolución del teatro musical (2010–2025)
 
@@ -45,168 +22,97 @@ Perfil artístico y estructural
 
 Explotación y comportamiento de giras
 
-Las capturas se encuentran en:
+Capturas disponibles en:
 
 /dashboards/
 
-🗂️ Fuentes de datos
-Fuentes institucionales
+Datasets finales utilizados
 
-Anuario de Estadísticas Culturales — Ministerio de Cultura
+El modelo se basa en tres datasets conectados:
 
-Anuario SGAE de las Artes Escénicas
-
-Fuentes sectoriales y públicas
-
-Carteleras de teatro musical
-
-Webs especializadas
-
-Información pública de productoras y teatros
-
-Curación manual
-
-Normalización y enriquecimiento a partir de conocimiento profesional del sector.
-
-📦 Datasets finales utilizados
-
-El modelo analítico se apoya en tres datasets finales conectados:
-
-Dataset	Contenido	Uso principal
+Dataset	Contenido	Uso
 maestro_musicales_final.csv	Obras, productoras, teatros, género, origen, años, gira	Estructura sectorial
-precio_entradas_musicales_final.csv	Precios anunciados 2026	Dashboard de pricing
-teatro_musical_habitos_2011_2025_limpio.csv	Asistencia y hábitos del público	Demanda agregada
+precio_entradas_musicales_final.csv	Precios anunciados 2026	Pricing
+teatro_musical_habitos_2011_2025_limpio.csv	Asistencia y hábitos	Demanda
 
-Todos se encuentran en:
+Ubicación:
 
-/data/processed/
+/data_processed/
 
-⚙️ Proceso de trabajo
-🔹 ETL (Extract · Transform · Load)
+Proceso analítico
+ETL y preparación
 
-Extracción
+Integración de fuentes institucionales y sectoriales.
 
-Integración de fuentes heterogéneas.
-
-Transformación
-
-Normalización de nombres (obras, teatros, productoras).
-
-Unificación de marcas históricas.
+Normalización de nombres y marcas históricas.
 
 Eliminación de duplicados.
 
-Conversión y validación de tipos.
+Validación de tipos y estados.
 
-Homogeneización de estados (activa, gira).
+Enriquecimiento con género, origen, ciudad y métricas temporales.
 
-Enriquecimiento:
-
-genero
-
-origen
-
-ciudad_teatro
-
-métricas temporales
-
-pricing
-
-Carga
-
-Generación de datasets analíticos finales listos para BI.
-
-🔹 EDA (Exploratory Data Analysis)
+Exploración y análisis
 
 Auditoría de calidad.
 
-Cobertura de variables estratégicas.
-
-Detección de patrones.
-
 Análisis territorial.
 
-Escalabilidad vía giras.
+Estudio de giras y escalabilidad.
 
 Concentración empresarial.
 
 Duración y formatos dominantes.
 
-🧰 Tecnologías y herramientas
+Tecnologías
 
-Python
-
-Pandas · NumPy
+Python, Pandas, NumPy
 
 Jupyter Notebook
 
-Matplotlib · Seaborn
+Matplotlib, Seaborn
 
 Power BI
 
-Git & GitHub
+Git y GitHub
 
-Data Cleaning
-
-ETL pipelines
-
-Data Modeling
-
-Visual Analytics
-
-Storytelling con datos
-
-📈 Principales insights (estado actual)
+Principales insights
 
 Predominio de franquicias (~73%).
 
-Baja presencia de creación propia.
-
 Alta concentración empresarial.
 
-Madrid como polo inicial dominante.
+Madrid como principal polo inicial.
 
-Más del 50% de los títulos salen de gira.
+Más del 50% de títulos en gira.
 
-Duración media estabilizada (~138 min).
+Duración media estabilizada (~138 minutos).
 
-Solo una minoría permanece activa.
-
-El sector prioriza formatos familiares y comedia.
-
-🗃️Estructura del repositorio:
-
+Estructura del repositorio
 /
 ├─ data_raw/
-├─ data_processed/
 ├─ data_interim/
+├─ data_processed/
 ├─ notebooks_eda/
 ├─ notebooks_etl/
+├─ dashboards/
 ├─ .gitignore
 └─ README.md
 
-▶️ Cómo reproducir el proyecto
+Cómo reproducir el proyecto
 
 Clona el repositorio.
 
-Ejecuta los notebooks en /notebooks/etl/.
+Ejecuta los notebooks de ETL.
 
-Usa los CSV finales en /data/processed/.
+Usa los CSV finales en Power BI.
 
-Abre el archivo Power BI (.pbix) si se incluye.
+Explora dashboards exportados.
 
-Explora dashboards en /dashboards/.
-
-📌 Alcance y consideraciones
-
-El proyecto se basa en una muestra curada de 71 producciones.
-
-No busca exhaustividad absoluta, sino la identificación de tendencias estructurales y patrones de negocio del teatro musical español.
-
-🚧 Estado del proyecto
+Estado del proyecto
 
 ✔ ETL documentado
-✔ Modelo con tres datasets finales
+✔ Modelo con tres datasets
 ✔ Dashboards Power BI
 ✔ Storytelling sectorial
-⏳ Posibles ampliaciones futuras (automatización, modelo estrella, pricing avanzado)
+⏳ Posibles ampliaciones futuras
