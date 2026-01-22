@@ -174,22 +174,16 @@ Solo una minoría permanece activa.
 
 El sector prioriza formatos familiares y comedia.
 
-🗃️ Estructura del repositorio
-├── data/
-│   ├── raw/
-│   ├── interim/
-│   └── processed/
-│
-├── notebooks/
-│   ├── eda/
-│   └── etl/
-│
-├── dashboards/
-│
-├── docs/
-│
-├── README.md
-└── .gitignore
+🗃️Estructura del repositorio:
+
+/
+├─ data_raw/
+├─ data_processed/
+├─ data_interim/
+├─ notebooks_eda/
+├─ notebooks_etl/
+├─ .gitignore
+└─ README.md
 
 ▶️ Cómo reproducir el proyecto
 
