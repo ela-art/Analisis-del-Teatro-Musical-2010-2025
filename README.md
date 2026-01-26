@@ -131,6 +131,8 @@ Matplotlib, Seaborn
 
 Power BI
 
+ChatGPT
+
 Git & GitHub
 
 Principales insights
